@@ -1,0 +1,153 @@
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    background: #7EA3DC url('https://upload.wikimedia.org/wikipedia/commons/9/94/Abstract_blue_background7.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 50px;
+    color: white;
+    text-shadow: 2px 2px gray;
+}
+
+h1,
+p,
+.btn {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1,
+.alert,
+.quote,
+.author {
+    text-align: center;
+}
+
+.btn {
+    font-size: 1.5em;
+}
+
+.quote {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 2px 2px;
+}
+
+#author {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-style: italic;
+    color: gray;
+    font-size: 1.3em;
+
+}
+
+
+#quote {
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+.alert {
+    padding: 5px;
+    margin: 15px 0 -46px 0;
+}
+
+/* Spinner */
+.spinner {
+    margin: 5px auto 0;
+    width: 70px;
+    text-align: center;
+}
+
+.spinner>div {
+    width: 18px;
+    height: 18px;
+    background-color: #333;
+
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0)
+    }
+
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+.copy {
+
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    background-color: #15883e;
+    height: 48px;
+    margin: 7px;
+
+
+
+
+}
+
+.copy:hover {
+    background-color: #1db954;
+}

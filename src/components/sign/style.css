@@ -1,0 +1,14 @@
+.password-input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    flex: 1;
+    padding-right: 30px; /* Adjust as needed based on the icon size */
+  }
+  
+  .eye-icon {
+    cursor: pointer;
+    margin-left: -25px; /* Adjust as needed based on the icon size and positioning */
+  }

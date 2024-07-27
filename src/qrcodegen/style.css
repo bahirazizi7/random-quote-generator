@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.container {
+    width: 35%;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.qrcode {
+    margin-top: 20px;
+}
+
+/* ... (existing styles) */
+
+button {
+    /* ... (existing styles) */
+    margin-right: 10px;
+}
+
+/* New styles for the download button */
+button.download {
+    background-color: #28a745;
+}
+
+button.download {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* Add a loading style */
+.loading {
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.about-qrcode {
+    width: 30%;
+
+}
+
+ul li {
+    margin-top: 10px;
+}
